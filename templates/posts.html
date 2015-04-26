@@ -1,0 +1,20 @@
+<div class="container">
+	<h1>Device Measurements</h1>
+	<form role="form">
+		<div class="form-group">
+			<div class="input-group">
+				<input ng-model="postBody" class="form-control"/>
+				<span class="input-group-btn">
+					<button ng-click="addPost()" class="btn btn-default">Add Test Value</button>
+				</span>
+			</div>
+		</div>
+	</form>
+	<ul class="list-group">
+		<li ng-repeat="post in posts | orderBy: '-date'" class="list-group-item">
+			<strong>@Device: {{post.username}}</strong>
+			<span>Humidity: {{post.humidity}}</span>
+			<span> - DateTime: {{post.date | date:'medium'}}</span>
+		</li>
+	</ul>
+</div>
