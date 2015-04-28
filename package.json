@@ -12,6 +12,6 @@
     "gulp-uglify": "^1.1.0",
     "jwt-simple": "^0.2.0",
     "mongoose": "^3.8.22",
-    "bcrypt": "0.10.x"
+    "bcrypt": "0.8.2"
   }
 }
